@@ -17,7 +17,7 @@ public class ProductManager {
     }
 
     public Product[] searchBy(String text) {
-        Product[] products = this.repo.findall();
+        Product[] products = this.repo.findAll();
         Product[] result = new Product[0];
         for (Product product : products) {
             if (matches(product, text)) {

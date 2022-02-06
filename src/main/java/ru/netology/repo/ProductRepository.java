@@ -12,7 +12,7 @@ public class ProductRepository {
         this.items = tmp;
     }
 
-    public Product[] findall() {
+    public Product[] findAll() {
         return this.items;
     }
 
