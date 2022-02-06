@@ -3,12 +3,12 @@ package ru.netology.domain;
 import java.util.Objects;
 
 public class Product {
-private long id;
-private String name;
-private int price;
+    private long id;
+    private String name;
+    private int price;
 
-public Product() {
-}
+    public Product() {
+    }
 
     public Product(long id, String name, int price) {
         this.id = id;

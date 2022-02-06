@@ -2,7 +2,7 @@ package ru.netology.domain;
 
 import java.util.Objects;
 
-public class Smarthone extends Product{
+public class Smarthone extends Product {
     private String manufacturer;
 
     public Smarthone(String manufacturer) {
