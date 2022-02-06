@@ -28,11 +28,12 @@ class ProductManagerTest {
         manager.save(firstSmarthone);
         manager.save(secondSmarthone);
     }
-    @Test
-    void shouldReturnByText(){
-Product[] expected ={firstProduct, firstBook, firstSmarthone};
-Product[] actual = manager.searchBy("me");
 
-assertArrayEquals(expected, actual);
+    @Test
+    void shouldReturnByText() {
+        Product[] expected = {firstProduct, firstBook, firstSmarthone};
+        Product[] actual = manager.searchBy("me");
+
+        assertArrayEquals(expected, actual);
     }
 }
