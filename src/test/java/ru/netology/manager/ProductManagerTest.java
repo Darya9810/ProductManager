@@ -51,17 +51,17 @@ class ProductManagerTest {
 
         assertArrayEquals(expected, actual);
     }
-    @Test
-    public void shouldNotFindAuthor() {
-        Product[] expected = {};
-        Product[] actual = manager.searchBy("Лэй Цзюнь");
-        assertArrayEquals(expected, actual);
-    }
 
     @Test
     public void shouldNotFindNull() {
         Product[] expected = {};
-        Product[] actual = manager.searchBy(null);
+        Product[] actual = manager.searchBy("null");
+        assertArrayEquals(expected, actual);
+    }
+    @Test
+    public void shouldNotFindAuthor() {
+        Product[] expected = {};
+        Product[] actual = manager.searchBy("рей бредбери");
         assertArrayEquals(expected, actual);
     }
 }
